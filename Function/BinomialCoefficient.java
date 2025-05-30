@@ -1,9 +1,9 @@
 package Function;
 
 public class BinomialCoefficient {
-    public static int Factorial(int n) {
+    public static int Factorial(int m) {
         int fact = 1;
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= m; i++) {
             fact = fact * i;
         }
         return fact;
