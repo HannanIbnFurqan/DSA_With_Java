@@ -1,16 +1,22 @@
 package Function;
 
+import java.util.Scanner;
+
 public class average {
-
-    public static void averageNum(int a, int b, int c) {
-
-        int result = a + b + c;
-
-        int average = result / 3;
-        System.out.print(average);
+    public static int AverageNum(int x, int y, int z) {
+        return (x + y + z) / 3;
     }
 
     public static void main(String[] args) {
-        averageNum(5, 10, 15);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter First Number = ");
+        int x = sc.nextInt();
+        System.out.println("Enter second number =");
+        int y = sc.nextInt();
+        System.out.println("Enter third number = ");
+        int z = sc.nextInt();
+        System.out.println("Average of three number = " + AverageNum(x, y, z) + "\n");
+        sc.close();
     }
+
 }
